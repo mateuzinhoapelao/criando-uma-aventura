@@ -7,3 +7,20 @@ body {
     align-items: center;
     height: 700px;
 }
+ 
+button {
+    background-color:#64A712
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+
+}
+
+
+
+.passo {
+   display: none;
+}
+
+.passo.ativo{
+    display:block
+}
