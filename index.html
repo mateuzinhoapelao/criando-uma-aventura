@@ -4,30 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+
     <title>Em busca da cidade perdida</title>
 </head>
 <body>
     <main>
+        <!-- Passo inicial -->
         <div class="passo ativo" id="passo-0">
-      <img src="cenario-passo0.png" alt=""> 
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e beleza naturais. nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi seguilas!</p>
-<button class="btn-proximo" data-proximo="1">Rio De Janeiro</button>
-<button class="btn-proximo" data-proximo="2">Pernambuco</button>
+            <img src="cenario-passo0.png" alt="Mapa antigo">
+            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
         </div>
+
+        <!-- Passo 1 -->
         <div class="passo" id="passo-1">
-         <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e beleza naturais. nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi seguilas!</p>
-<button class="btn-proximo" data-proximo="3">Rio De Janeiro</button>
-<button class="btn-proximo" data-proximo="4">Pernambuco</button>
+            <img src="cenario-rio.png" alt="Floresta no Rio de Janeiro">
+            <p>No Rio de Janeiro, as pistas me levaram até uma floresta densa próxima à serra. Lá encontrei uma inscrição misteriosa em uma pedra.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir pela trilha</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e procurar outra pista</button>
         </div>
+
+        <!-- Passo 2 -->
         <div class="passo" id="passo-2">
-          <p></p>
+            <img src="cenario-pernambuco.png" alt="Praia em Pernambuco">
+            <p>Em Pernambuco, as pistas me levaram a uma antiga fortaleza à beira-mar. Havia símbolos gravados nas paredes, mas pareciam estar incompletos...</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passos adicionais (opcional) -->
+        <div class="passo" id="passo-3">
+            <p>Você segue pela trilha e encontra uma cachoeira escondida. Atrás dela, há uma entrada para uma caverna misteriosa...</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Ao voltar, você percebe uma nova pista no mapa — talvez a cidade perdida esteja mais próxima do que imagina.</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
         </div>
     </main>
 
-     <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
